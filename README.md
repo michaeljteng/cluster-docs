@@ -36,10 +36,10 @@ Some important tips:
 # SOME DOCKERFILE
 FROM ubuntu:16.04
 
-RUN random docker stuff
+RUN [random docker stuff]
 ...
 ...
 
 RUN useradd -u 99999 mjteng
 ```
-Now, use docker with the created user as normal and things should work.
+Now, use docker with the created user as normal and things should work, i.e. `nvidia-docker --user [user you just created] ...`
